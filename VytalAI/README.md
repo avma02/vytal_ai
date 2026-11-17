@@ -41,9 +41,9 @@ npm run dev                                            # http://localhost:5173
 Log in at `/login` as **Admin** with `admin@vytalai.com` / `Admin@VytalAI123` (dev defaults).
 Full production steps are in **[DEPLOYMENT.md](DEPLOYMENT.md)**.
 
-## What changed vs. the original VocaCare code
+## What changed 
 
-Renamed to VytalAI everywhere (UI, API, emails `…@patient.vytalai`, localStorage keys, CSV names) and hardened:
+ VytalAI  (UI, API, emails `…@patient.vytalai`, localStorage keys, CSV names) and hardened:
 
 * **WebSocket no longer leaks patient data.** It was open to anyone and broadcast every full record
   (transcript included). Now admins authenticate with their JWT, doctors only get "patient assigned"
