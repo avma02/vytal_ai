@@ -44,7 +44,7 @@ ADMIN_FULL_NAME: str = os.getenv("ADMIN_FULL_NAME", "System Administrator")
 #   e.g. FRONTEND_ORIGINS=https://vytalai.vercel.app,https://www.vytalai.com
 # ---------------------------------------------------------------------------
 FRONTEND_ORIGINS: list[str] = _csv(
-    "FRONTEND_ORIGINS", "http://localhost:5173,http://localhost:3000"
+    "FRONTEND_ORIGINS", "http://localhost:5173,http://localhost:3000,https://vytal-ai-tc9p.vercel.app"
 )
 
 # ---------------------------------------------------------------------------
